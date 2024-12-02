@@ -10,11 +10,10 @@ body {
     color: #333;
 }
 
-/* Testing something */
 
 #app {
     text-align: center;
-    background: red;
+    background: beige;
     border-radius: 25px;
     padding: 50px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
