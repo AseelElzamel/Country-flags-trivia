@@ -105,4 +105,14 @@ function showResults() {
         : 'Keep Practicing!';
     appElement.appendChild(feedback);
 }
+
+// Toggle audio on/off
+function toggleAudio() {
+    const audio = document.getElementById('background-music');
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+}
 document.getElementById('start-btn').addEventListener('click', startQuiz);
