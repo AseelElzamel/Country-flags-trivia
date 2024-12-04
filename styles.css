@@ -2,7 +2,10 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: burlywood; 
+    background-image: url('images/world-map.png');
+    background-size: cover;   
+    background-position: center center;  
+    background-attachment: fixed;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,4 +59,67 @@ button:hover {
 button:active {
     background-color: #D32F2F;
     transform: scale(1);
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.answer-button {
+    background: brown; 
+    color: white;
+    font-size: 1.3em;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    margin: 12px;
+    width: 70%;
+    cursor: pointer;
+}
+
+.answer-button:hover {
+    background: green;
+    transform: scale(1.1);
+}
+
+.answer-button:active {
+    background: darkseagreen;
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 15px 30px;
+    }
+
+    img {
+        max-width: 250px;
+    }
+}
+
+.audio-toggle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: brown;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
